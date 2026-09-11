@@ -440,6 +440,19 @@ body{padding-bottom:76px}
 .limit .limit-total{margin-top:16px;background:linear-gradient(135deg,#FFF3E4,#FFE7D2);border:1.5px solid #F2C6A2;border-radius:12px;padding:10px 12px;font-size:14px;font-weight:900;color:var(--ink)}.limit .limit-total b{font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;color:var(--o);margin:0 2px}
 .nofee{display:flex;align-items:center;justify-content:center;gap:8px;margin:16px auto 0;max-width:420px;background:#EAF7EF;border:1.5px solid #9AD9B4;border-radius:12px;padding:11px 14px}.nofee .nofee-ic{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:#1FA463;color:#fff;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center}.nofee .nofee-tx{font-size:14px;font-weight:800;color:var(--dk)}.nofee .nofee-tx b{color:#1FA463;font-size:16px;font-weight:900}
 .xh2 .price .main .amt2{font-size:40px;font-weight:900;color:var(--o);line-height:.9;letter-spacing:-.01em}@media(max-width:359px){.xh2 .price .main{gap:6px}.xh2 .price .main .l{font-size:13px}.xh2 .price .main .amt2{font-size:33px}}.anniv{background:var(--dk);color:#fff;border-radius:14px;padding:16px 14px;text-align:center;margin-bottom:20px}.anniv .a1{font-size:13px;font-weight:700;color:#F5C89B;letter-spacing:.02em;line-height:1.6}.anniv .a2{font-size:19px;font-weight:900;color:#fff;line-height:1.45;margin-top:4px}.anniv .a2 em{font-style:normal;color:#FFC46B}.bn-list{display:flex;flex-direction:column;gap:12px}.bn{position:relative;background:var(--w);border:1.5px solid var(--bd);border-radius:14px;padding:16px 16px 16px 18px;display:flex;align-items:center;gap:14px}.bn::before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:4px;border-radius:0 4px 4px 0;background:var(--o)}.bn-l{flex:1 1 auto;min-width:0}.bn-tag{display:inline-block;background:var(--o);color:#fff;font-size:10.5px;font-weight:900;letter-spacing:.06em;border-radius:20px;padding:3px 11px;margin-bottom:7px}.bn-step{font-size:11.5px;color:var(--l);font-weight:700;margin-bottom:2px}.bn-ttl{font-size:15px;font-weight:900;color:var(--dk);line-height:1.45}.bn-link{display:inline-block;margin-top:6px;font-size:11.5px;font-weight:700;color:var(--o);text-decoration:none;border-bottom:1px solid rgba(232,82,26,.35);padding-bottom:1px}.bn-r{flex:0 0 auto;text-align:center;min-width:72px}.bn-free{font-size:27px;font-weight:900;color:var(--o);line-height:1}.bn-free.half{font-size:24px}.bn-total{margin-top:18px;background:linear-gradient(135deg,#FFF3E4,#FFE7D2);border:1.5px solid #F2C6A2;border-radius:12px;padding:14px 12px;text-align:center;font-size:14px;font-weight:900;color:var(--dk);line-height:1.6}.bn-total b{color:var(--o);font-size:22px}.bn-note{font-size:11px;color:var(--l);text-align:center;margin-top:10px;line-height:1.6}@media(max-width:359px){.bn{padding:14px 12px 14px 15px;gap:10px}.bn-ttl{font-size:14px}.bn-free{font-size:24px}.bn-r{min-width:62px}}.xh2 .price .main.main-alt{flex-direction:column;gap:2px;margin-top:10px}.xh2 .price .main.main-alt .l{font-size:16px;line-height:1.35}.xh2 .price .main.main-alt .l .l2{margin-left:4px}.xh2 .price .main.main-alt .amt2{font-size:46px}@media(max-width:359px){.xh2 .price .main.main-alt .l{font-size:14.5px}.xh2 .price .main.main-alt .amt2{font-size:40px}}.tr-more{margin-top:14px;background:#fff;border:1px solid var(--bd);border-radius:12px;padding:16px 16px}.tr-more-t{font-size:13.5px;font-weight:900;color:var(--dk);line-height:1.55;margin-bottom:7px;padding-left:12px;position:relative}.tr-more-t::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:3px;border-radius:3px;background:var(--o)}.tr-more-p{font-size:12px;color:var(--m);line-height:1.75}</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1547395662993426');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1547395662993426&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X65H0ZZ4M6"></script>
 <script>
@@ -729,15 +742,18 @@ body{padding-bottom:76px}
   /* 予約・電話・特典リンク タップ */
   document.addEventListener('click',function(e){
     var a=e.target.closest?e.target.closest('a[href]'):null;
-    if(!a||typeof gtag!=='function')return;
+    if(!a)return;
+    var ga=typeof gtag==='function', fb=typeof fbq==='function';
     var href=a.getAttribute('href')||'';
     var loc=a.getAttribute('data-cta')||'other';
     if(href.indexOf('onesbody.stores.jp')>-1){
-      gtag('event','reserve_click',{cta_location:loc});
+      if(ga)gtag('event','reserve_click',{cta_location:loc});
+      if(fb)fbq('track','Schedule',{content_name:loc});
     }else if(href.indexOf('tel:')===0){
-      gtag('event','tel_click',{cta_location:loc});
+      if(ga)gtag('event','tel_click',{cta_location:loc});
+      if(fb)fbq('track','Contact',{content_name:'tel_'+loc});
     }else if(href.indexOf('ones-body.com')>-1){
-      gtag('event','info_click',{cta_location:loc});
+      if(ga)gtag('event','info_click',{cta_location:loc});
     }
   });
 })();

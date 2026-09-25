@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<!-- BUILD v4 2026-09-25: webp外部化 / フォントはload後にJS読込 / ヒーロー1枚目静止 / date削除 -->
+<!-- BUILD v5 2026-09-25: 日本語Webフォント廃止(端末フォント) / Oswaldのみload後optional / webp外部化 / ヒーロー静止 / date削除 -->
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="image" href="img/hero-1.webp">
 <style>
-:root{--o:#E8521A;--c:#F5F0EB;--w:#FFFFFF;--t:#333;--m:#666;--l:#999;--lo:#FEF0E7;--bd:#E2D8D0;--dk:#2A1F17;--ln:#06C755;--f:'Noto Sans JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif}
+:root{--o:#E8521A;--c:#F5F0EB;--w:#FFFFFF;--t:#333;--m:#666;--l:#999;--lo:#FEF0E7;--bd:#E2D8D0;--dk:#2A1F17;--ln:#06C755;--f:'Noto Sans JP','Noto Sans CJK JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:var(--f);color:var(--t);line-height:1.7;background:var(--w);-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
@@ -770,7 +770,7 @@ src="https://www.facebook.com/tr?id=1547395662993426&ev=PageView&noscript=1"/></
   }else{els.forEach(setBg);}
   window.addEventListener('load',function(){
     // Webフォントは表示完了後に読み込む（描画をフォントに依存させない）
-    requestAnimationFrame(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap';document.head.appendChild(l);});
+    requestAnimationFrame(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=optional';document.head.appendChild(l);});
     setTimeout(function(){[].slice.call(document.querySelectorAll('.hslide .s[data-src],.xh3 .slides .s[data-src]')).forEach(function(s){s.style.backgroundImage='url('+s.getAttribute('data-src')+')';s.removeAttribute('data-src');});},300);
   });
 })();

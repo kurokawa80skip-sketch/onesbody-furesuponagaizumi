@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<!-- BUILD v5 2026-09-25: 日本語Webフォント廃止(端末フォント) / Oswaldのみload後optional / webp外部化 / ヒーロー静止 / date削除 -->
+<!-- BUILD v6 2026-09-25: ヒーロー1枚目を<img fetchpriority=high>化 / 端末フォント / webp外部化 / date削除 -->
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -10,7 +10,7 @@
 <meta name="description" content="静岡安倍川店OPEN＆フレスポ長泉店2周年記念キャンペーン（9/1〜9/30）。初回パーソナル体験 無料・2回目FMS検査 無料・初月会費半額・入会金なし。最大25,700円相当お得。パーソナルジム ONE'S BODY フレスポ長泉店。"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="img/hero-1.webp">
+<link rel="preload" as="image" href="img/hero-1.webp" fetchpriority="high">
 <style>
 :root{--o:#E8521A;--c:#F5F0EB;--w:#FFFFFF;--t:#333;--m:#666;--l:#999;--lo:#FEF0E7;--bd:#E2D8D0;--dk:#2A1F17;--ln:#06C755;--f:'Noto Sans JP','Noto Sans CJK JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -441,7 +441,8 @@ body{padding-bottom:76px}
 .limit .limit-total{margin-top:16px;background:linear-gradient(135deg,#FFF3E4,#FFE7D2);border:1.5px solid #F2C6A2;border-radius:12px;padding:10px 12px;font-size:14px;font-weight:900;color:var(--ink)}.limit .limit-total b{font-family:'Oswald',sans-serif;font-weight:700;font-size:22px;color:var(--o);margin:0 2px}
 .nofee{display:flex;align-items:center;justify-content:center;gap:8px;margin:16px auto 0;max-width:420px;background:#EAF7EF;border:1.5px solid #9AD9B4;border-radius:12px;padding:11px 14px}.nofee .nofee-ic{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:#1FA463;color:#fff;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center}.nofee .nofee-tx{font-size:14px;font-weight:800;color:var(--dk)}.nofee .nofee-tx b{color:#1FA463;font-size:16px;font-weight:900}
 .xh2 .price .main .amt2{font-size:40px;font-weight:900;color:var(--o);line-height:.9;letter-spacing:-.01em}@media(max-width:359px){.xh2 .price .main{gap:6px}.xh2 .price .main .l{font-size:13px}.xh2 .price .main .amt2{font-size:33px}}.anniv{background:var(--dk);color:#fff;border-radius:14px;padding:16px 14px;text-align:center;margin-bottom:20px}.anniv .a1{font-size:13px;font-weight:700;color:#F5C89B;letter-spacing:.02em;line-height:1.6}.anniv .a2{font-size:19px;font-weight:900;color:#fff;line-height:1.45;margin-top:4px}.anniv .a2 em{font-style:normal;color:#FFC46B}.bn-list{display:flex;flex-direction:column;gap:12px}.bn{position:relative;background:var(--w);border:1.5px solid var(--bd);border-radius:14px;padding:16px 16px 16px 18px;display:flex;align-items:center;gap:14px}.bn::before{content:'';position:absolute;left:0;top:12px;bottom:12px;width:4px;border-radius:0 4px 4px 0;background:var(--o)}.bn-l{flex:1 1 auto;min-width:0}.bn-tag{display:inline-block;background:var(--o);color:#fff;font-size:10.5px;font-weight:900;letter-spacing:.06em;border-radius:20px;padding:3px 11px;margin-bottom:7px}.bn-step{font-size:11.5px;color:var(--l);font-weight:700;margin-bottom:2px}.bn-ttl{font-size:15px;font-weight:900;color:var(--dk);line-height:1.45}.bn-link{display:inline-block;margin-top:6px;font-size:11.5px;font-weight:700;color:var(--o);text-decoration:none;border-bottom:1px solid rgba(232,82,26,.35);padding-bottom:1px}.bn-r{flex:0 0 auto;text-align:center;min-width:72px}.bn-free{font-size:27px;font-weight:900;color:var(--o);line-height:1}.bn-free.half{font-size:24px}.bn-total{margin-top:18px;background:linear-gradient(135deg,#FFF3E4,#FFE7D2);border:1.5px solid #F2C6A2;border-radius:12px;padding:14px 12px;text-align:center;font-size:14px;font-weight:900;color:var(--dk);line-height:1.6}.bn-total b{color:var(--o);font-size:22px}.bn-note{font-size:11px;color:var(--l);text-align:center;margin-top:10px;line-height:1.6}@media(max-width:359px){.bn{padding:14px 12px 14px 15px;gap:10px}.bn-ttl{font-size:14px}.bn-free{font-size:24px}.bn-r{min-width:62px}}.xh2 .price .main.main-alt{flex-direction:column;gap:2px;margin-top:10px}.xh2 .price .main.main-alt .l{font-size:16px;line-height:1.35}.xh2 .price .main.main-alt .l .l2{margin-left:4px}.xh2 .price .main.main-alt .amt2{font-size:46px}@media(max-width:359px){.xh2 .price .main.main-alt .l{font-size:14.5px}.xh2 .price .main.main-alt .amt2{font-size:40px}}.tr-more{margin-top:14px;background:#fff;border:1px solid var(--bd);border-radius:12px;padding:16px 16px}.tr-more-t{font-size:13.5px;font-weight:900;color:var(--dk);line-height:1.55;margin-bottom:7px;padding-left:12px;position:relative}.tr-more-t::before{content:'';position:absolute;left:0;top:4px;bottom:4px;width:3px;border-radius:3px;background:var(--o)}.tr-more-p{font-size:12px;color:var(--m);line-height:1.75}.xh3 .slides .s:first-child{animation:none!important;opacity:1!important}
-.xh3 .slides .s:not(:first-child){z-index:1}</style>
+.xh3 .slides .s:not(:first-child){z-index:1}
+.xh3 .slides img.s{width:100%;height:100%;max-width:none;object-fit:cover;object-position:center 30%}</style>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -478,7 +479,7 @@ src="https://www.facebook.com/tr?id=1547395662993426&ev=PageView&noscript=1"/></
 <!-- HERO -->
 <section class="xh xh3">
 <div class="stage">
-<div class="slides"><div class="s" style="background-image:url(img/hero-1.webp)"></div><div class="s" data-src="img/hero-2.webp"></div><div class="s" data-src="img/hero-3.webp"></div><div class="s" data-src="img/hero-4.webp"></div><div class="s" data-src="img/hero-5.webp"></div></div>
+<div class="slides"><img class="s" src="img/hero-1.webp" alt="" width="880" height="660" fetchpriority="high" decoding="async"><div class="s" data-src="img/hero-2.webp"></div><div class="s" data-src="img/hero-3.webp"></div><div class="s" data-src="img/hero-4.webp"></div><div class="s" data-src="img/hero-5.webp"></div></div>
 <div class="veil"></div>
 <div class="copy">
 <div class="eye"><span class="loc">おかげさまで2周年 ・ フレスポ長泉店</span></div>

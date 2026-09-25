@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<!-- BUILD v3 2026-09-25: webp外部化 / フォント非ブロック / ヒーロー1枚目静止 / date削除 -->
+<!-- BUILD v4 2026-09-25: webp外部化 / フォントはload後にJS読込 / ヒーロー1枚目静止 / date削除 -->
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -10,9 +10,7 @@
 <meta name="description" content="静岡安倍川店OPEN＆フレスポ長泉店2周年記念キャンペーン（9/1〜9/30）。初回パーソナル体験 無料・2回目FMS検査 無料・初月会費半額・入会金なし。最大25,700円相当お得。パーソナルジム ONE'S BODY フレスポ長泉店。"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="img/hero-1.webp" fetchpriority="high">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap"></noscript>
+<link rel="preload" as="image" href="img/hero-1.webp">
 <style>
 :root{--o:#E8521A;--c:#F5F0EB;--w:#FFFFFF;--t:#333;--m:#666;--l:#999;--lo:#FEF0E7;--bd:#E2D8D0;--dk:#2A1F17;--ln:#06C755;--f:'Noto Sans JP','Hiragino Sans','Hiragino Kaku Gothic ProN','Yu Gothic',Meiryo,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
@@ -771,6 +769,8 @@ src="https://www.facebook.com/tr?id=1547395662993426&ev=PageView&noscript=1"/></
     els.forEach(function(el){io.observe(el);});
   }else{els.forEach(setBg);}
   window.addEventListener('load',function(){
+    // Webフォントは表示完了後に読み込む（描画をフォントに依存させない）
+    requestAnimationFrame(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@500;600;700&display=swap';document.head.appendChild(l);});
     setTimeout(function(){[].slice.call(document.querySelectorAll('.hslide .s[data-src],.xh3 .slides .s[data-src]')).forEach(function(s){s.style.backgroundImage='url('+s.getAttribute('data-src')+')';s.removeAttribute('data-src');});},300);
   });
 })();

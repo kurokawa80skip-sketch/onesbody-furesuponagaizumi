@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-<!-- BUILD oct-v1 2026-09-29: 上司v10ベース / 計測タグ復元 / webp外部化 / 端末フォント / ヒーロー高優先 -->
+<!-- BUILD oct-v2 2026-09-29: oct-v1 + Meta LP50（50%到達）送信 -->
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
@@ -734,6 +734,7 @@ src="https://www.facebook.com/tr?id=1547395662993426&ev=PageView&noscript=1"/></
       if(p>=m&&!fired[m]){
         fired[m]=true;
         if(typeof gtag==='function')gtag('event','scroll_depth',{percent:m});
+        if(m===50&&typeof fbq==='function')fbq('trackCustom','LP50',{store:'nagaizumi'});
       }
     }
   }
